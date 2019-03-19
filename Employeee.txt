@@ -1,0 +1,58 @@
+<?php require 'cnn.php';?>
+<html> 
+<head> 
+<title>Employee Form</title>
+<LINK href="register_style.css" rel="stylesheet" type="text/css">
+<style type="text/CSS">
+body
+{
+  background-color:Lightblue;
+}
+img
+{
+width:350px;
+margin-left:300px;
+margin-rigth:150px;
+padding:8px;
+}
+
+
+<body> 
+    <form name="formcheck" id="formcheck" onsubmit="javascript:return check();" action="register_action.php" method="post">
+		<img src="flat-50-off-on-adidas-womens-training-collection-deal-img.jpg">
+		<h1>Employee Form</h1>
+		<div id="center">	
+			
+			<p>Name</p>
+			<input type="text" name="name" size="25" maxlength="30">
+
+                                                    <p>Date of Birth</p>
+            			<input type="date" name"birthday">
+
+			<p>Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <select name="sex" style="width:auto">
+                <option value="" >Select</option>
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>&nbsp;&nbsp;
+	<p>Address</p>
+            	<textarea cols="" rows=""  name="address"></textarea>
+	<p>District</p>
+                 <input type="text" name="district" size="10" </p>
+		<div id="right-side">		
+			<p>Phone number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+			<input type="text" name="phone" value="" style="width:150px;" />
+			<p>Email ID (This will be your username for login)</p>
+			<input type="text" name="email" id="email" value=""/>
+		
+		</div><!--end user-details-->
+
+            <input type="reset" value="Reset" name="reset" class="reset"/>
+		</div><!-- end user-message -->
+        <div id="submit-button">
+            <input type="submit" value="Submit" name="submit" class="submit" />
+        </div>
+	</form>	
+ 
+</body> 
+</html> 
